@@ -4,7 +4,7 @@ import 'dotenv/config';
 const server = express()
 
 const streamkey = process.env.streamkey
-const video = "stock-video.mp3"
+const video = "stock-video.mov"
 const audio = "lofi-song-room-by-lofium-242714.mp3";
 
 const ffmpegCommand = [
