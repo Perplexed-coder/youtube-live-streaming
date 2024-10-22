@@ -5,9 +5,9 @@ import { stdin as input, stdout as output } from 'node:process';
 const server = express()
 const rl = readline.createInterface({ input, output });
 
-const streamkey = await rl.question('Send Your Stream Key On Youtube ? ( This Is Screet key) ');
-const video = await rl.question('Send Your filename video ?  ? ( Example : video.mp4 ) ');
-const audio = "https://stream.zeno.fm/ez4m4918n98uv";
+const video = "stock-video.mov"
+const audio = "lofi-song-room-by-lofium-242714.mp3";
+const streamkey = process.env.streamkey
 
 const ffmpegCommand = [
   'ffmpeg',
