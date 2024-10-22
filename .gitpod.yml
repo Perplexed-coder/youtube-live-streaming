@@ -7,4 +7,9 @@
 tasks:
   - init: npm install
 
+  - update: |
+      sudo apt update
+      sudo apt install ffmpeg
+
+
 
